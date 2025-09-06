@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
+import Image from 'next/image';
 
 export default function Home() {
   const [scrollProgress, setScrollProgress] = useState(0);
@@ -89,13 +90,19 @@ export default function Home() {
             <div className="mb-8">
               <div className="w-32 h-32 mx-auto mb-8 glass rounded-full flex items-center justify-center neon-glow overflow-hidden relative">
                 {/* Profile Image */}
-                <img 
+                <Image 
                   src="/profile-image.jpg" 
                   alt="Gaurav Singh Bais" 
+                  width={128}
+                  height={128}
                   className="w-full h-full object-cover rounded-full"
                   onError={(e) => {
-                    e.currentTarget.style.display = 'none';
-                    e.currentTarget.nextElementSibling.style.display = 'flex';
+                    const target = e.currentTarget as HTMLImageElement;
+                    target.style.display = 'none';
+                    const nextElement = target.nextElementSibling as HTMLElement;
+                    if (nextElement) {
+                      nextElement.style.display = 'flex';
+                    }
                   }}
                 />
                 {/* Fallback G letter - hidden by default */}
@@ -154,13 +161,13 @@ export default function Home() {
               <div className="glass-card rounded-3xl p-8 h-full">
                 <h3 className="text-3xl font-bold mb-6 gradient-text">My Journey</h3>
                 <p className="text-white/80 text-lg leading-relaxed mb-6">
-                  I'm a full-stack engineer with 3+ years of hands-on experience building scalable web applications and SaaS platforms using the MERN stack. What started as curiosity about how products work quickly grew into a career focused on crafting systems that are reliable, efficient, and impactful.
+                  I&apos;m a full-stack engineer with 3+ years of hands-on experience building scalable web applications and SaaS platforms using the MERN stack. What started as curiosity about how products work quickly grew into a career focused on crafting systems that are reliable, efficient, and impactful.
                 </p>
                 <p className="text-white/80 text-lg leading-relaxed mb-6">
                   At RapidData, I contributed to a low-code platform where I built reusable React components, analytics dashboards, and optimized performance for enterprise users. Later, at NoxAlgo, I worked as a full-stack engineer, building a SaaS social media management tool with React, Node.js, DevOps pipelines, and even React Native for mobile scheduling.
                 </p>
                 <p className="text-white/80 text-lg leading-relaxed mb-8">
-                  Through these roles, I've learned that great software isn't just about code — it's about solving problems, streamlining workflows, and delivering experiences that help businesses grow.
+                  Through these roles, I&apos;ve learned that great software isn&apos;t just about code — it&apos;s about solving problems, streamlining workflows, and delivering experiences that help businesses grow.
                 </p>
                 <div className="grid grid-cols-2 gap-6">
                   <div className="text-center reveal-delay-1">
@@ -213,7 +220,7 @@ export default function Home() {
                   </div>
                   <h4 className="text-xl font-bold">Always Evolving</h4>
                 </div>
-                <p className="text-white/70">Tech moves fast. Whether it's React Native for mobile or AI-driven tools, I stay curious and adapt quickly, bringing modern solutions to every project.</p>
+                <p className="text-white/70">Tech moves fast. Whether it&apos;s React Native for mobile or AI-driven tools, I stay curious and adapt quickly, bringing modern solutions to every project.</p>
               </div>
             </div>
           </div>

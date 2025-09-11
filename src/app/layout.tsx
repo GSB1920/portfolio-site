@@ -17,6 +17,12 @@ export const metadata: Metadata = {
   description: "Passionate full-stack engineer with 3+ years of experience building scalable web applications and SaaS platforms.",
   keywords: ["Full-Stack Developer", "React", "Node.js", "MERN Stack", "TypeScript", "Next.js"],
   authors: [{ name: "Gaurav Singh Bais" }],
+  viewport: {
+    width: "device-width",
+    initialScale: 1,
+    maximumScale: 1,
+    userScalable: false,
+  },
   icons: {
     icon: [
       { url: '/favicon.svg', type: 'image/svg+xml' },

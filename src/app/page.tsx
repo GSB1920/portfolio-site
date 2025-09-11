@@ -84,18 +84,19 @@ export default function Home() {
       </nav>
 
       {/* Hero Section */}
-      <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden">
-        <div className="max-w-6xl mx-auto px-6 text-center z-10">
+      <section id="home" className="hero-section min-h-screen flex items-center justify-center relative overflow-hidden">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 text-center z-10">
           <div className="reveal">
-            <div className="mb-8">
-              <div className="w-32 h-32 mx-auto mb-8 glass rounded-full flex items-center justify-center neon-glow overflow-hidden relative">
+            <div className="profile-image-container mb-6 sm:mb-8">
+              <div className="w-24 h-24 sm:w-28 sm:h-28 md:w-32 md:h-32 lg:w-36 lg:h-36 mx-auto mb-6 sm:mb-8 glass rounded-full flex items-center justify-center neon-glow overflow-hidden relative">
                 {/* Profile Image */}
                 <Image 
                   src="/profile-image.jpg" 
                   alt="Gaurav Singh Bais" 
-                  width={128}
-                  height={128}
+                  width={144}
+                  height={144}
                   className="w-full h-full object-cover rounded-full"
+                  priority
                   onError={(e) => {
                     const target = e.currentTarget as HTMLImageElement;
                     target.style.display = 'none';
@@ -106,33 +107,35 @@ export default function Home() {
                   }}
                 />
                 {/* Fallback G letter - hidden by default */}
-                <span className="text-5xl font-bold gradient-text absolute inset-0 flex items-center justify-center" style={{display: 'none'}}>G</span>
+                <span className="text-3xl sm:text-4xl md:text-5xl font-bold gradient-text absolute inset-0 flex items-center justify-center" style={{display: 'none'}}>G</span>
               </div>
             </div>
-            <h1 className="text-6xl md:text-8xl font-black mb-6 leading-tight">
-              Hi, I&apos;m <span className="gradient-text">Gaurav</span>
-            </h1>
-            <h2 className="text-2xl md:text-4xl font-light text-white/80 mb-8">
-              Full-Stack <span className="gradient-text font-semibold">Engineer</span>
-            </h2>
-            <p className="text-xl text-white/60 max-w-3xl mx-auto mb-12 leading-relaxed">
-              Turning <span className="font-semibold gradient-text">complex ideas</span> into 
-              <span className="font-semibold text-[#00d4ff]"> seamless products</span>. 🚀 <br />
-              I specialize in building <span className="font-semibold text-[#8b5cf6]">scalable web apps</span> 
-              with the <span className="font-bold text-[#f472b6]">MERN stack</span> — 
-              <span className="italic"> fast</span>, <span className="italic">reliable</span>, and 
-              <span className="italic"> built to grow</span>. ⚡
-            </p>
-            <div className="flex flex-col sm:flex-row gap-6 justify-center">
+            <div className="hero-text">
+              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-black mb-4 sm:mb-6 leading-tight">
+                Hi, I&apos;m <span className="gradient-text">Gaurav</span>
+              </h1>
+              <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-light text-white/80 mb-6 sm:mb-8">
+                Full-Stack <span className="gradient-text font-semibold">Engineer</span>
+              </h2>
+              <p className="text-base sm:text-lg md:text-xl text-white/60 max-w-3xl mx-auto mb-8 sm:mb-10 md:mb-12 leading-relaxed px-4 sm:px-0">
+                Turning <span className="font-semibold gradient-text">complex ideas</span> into 
+                <span className="font-semibold text-[#00d4ff]"> seamless products</span>. 🚀 <br />
+                I specialize in building <span className="font-semibold text-[#8b5cf6]">scalable web apps</span> 
+                with the <span className="font-bold text-[#f472b6]">MERN stack</span> — 
+                <span className="italic"> fast</span>, <span className="italic">reliable</span>, and 
+                <span className="italic"> built to grow</span>. ⚡
+              </p>
+            </div>
+            <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center px-4 sm:px-0">
               <button 
                 onClick={() => scrollToSection('projects')} 
-                className="glass px-8 py-4 rounded-xl font-semibold text-lg neon-glow hover:scale-105 transition-all duration-300"
+                className="glass px-6 sm:px-8 py-3 sm:py-4 rounded-xl font-semibold text-base sm:text-lg neon-glow hover:scale-105 transition-all duration-300"
               >
                 View My Work
               </button>
               <button 
                 onClick={() => scrollToSection('contact')} 
-                className="border border-[#00d4ff]/50 px-8 py-4 rounded-xl font-semibold text-lg hover:bg-[#00d4ff]/10 transition-all duration-300"
+                className="border border-[#00d4ff]/50 px-6 sm:px-8 py-3 sm:py-4 rounded-xl font-semibold text-base sm:text-lg hover:bg-[#00d4ff]/10 transition-all duration-300"
               >
                 Let&apos;s Connect
               </button>
@@ -324,7 +327,8 @@ export default function Home() {
               
               <div className="mb-6">
                 <h4 className="text-xl font-bold text-white mb-4">Key Achievements</h4>
-                <ul className="space-y-3 text-white/80">
+                <ul className="space-y-3 text-white/  
+                80">
                   <li className="flex items-start">
                     <div className="w-2 h-2 bg-[#00d4ff] rounded-full mt-2 mr-3 flex-shrink-0"></div>
                     Built and led development of a Social Media Management SaaS Platform (similar to Hootsuite) for scheduling, content approvals, and analytics

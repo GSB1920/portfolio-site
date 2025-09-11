@@ -120,8 +120,7 @@ export default function Home() {
               <p className="text-base sm:text-lg md:text-xl text-white/60 max-w-3xl mx-auto mb-10 sm:mb-12 leading-relaxed px-4 sm:px-0">
                 Turning <span className="font-semibold gradient-text">complex ideas</span> into 
                 <span className="font-semibold text-[#00d4ff]"> seamless products</span>. 🚀 <br />
-                I specialize in building <span className="font-semibold text-[#8b5cf6]">scalable web apps</span> 
-                with the <span className="font-bold text-[#f472b6]">MERN stack</span> — 
+                I specialize in building <span className="font-semibold text-[#8b5cf6]">scalable web apps</span> with the <span className="font-bold text-[#f472b6]">MERN stack</span> — 
                 <span className="italic"> fast</span>, <span className="italic">reliable</span>, and 
                 <span className="italic"> built to grow</span>. ⚡
               </p>
@@ -238,7 +237,7 @@ export default function Home() {
             <div className="w-24 h-1 bg-gradient-to-r from-[#00d4ff] to-[#8b5cf6] mx-auto"></div>
           </div>
           
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-8">
             {/* Frontend */}
             <div className="scale-in reveal-delay-1 glass-card rounded-3xl p-8 hover:scale-105 transition-all duration-300">
               <div className="w-16 h-16 bg-gradient-to-r from-[#00d4ff] to-[#8b5cf6] rounded-2xl flex items-center justify-center mx-auto mb-6">
@@ -251,8 +250,7 @@ export default function Home() {
                 <div className="glass text-center py-3 px-2 rounded-lg text-sm font-mono">React</div>
                 <div className="glass text-center py-3 px-2 rounded-lg text-sm font-mono">Next.js</div>
                 <div className="glass text-center py-3 px-2 rounded-lg text-sm font-mono">TypeScript</div>
-                <div className="glass text-center py-3 px-2 rounded-lg text-sm font-mono">TailwindCSS</div>
-                <div className="glass text-center py-3 px-2 rounded-lg text-sm font-mono">React Native</div>
+                <div className="glass text-center py-3 px-2 rounded-lg text-sm font-mono">Tailwind CSS</div>
               </div>
             </div>
             
@@ -300,6 +298,22 @@ export default function Home() {
                 <div className="glass text-center py-3 px-2 rounded-lg text-sm font-mono">AWS</div>
                 <div className="glass text-center py-3 px-2 rounded-lg text-sm font-mono">CI/CD (GitHub Actions)</div>
                 <div className="glass text-center py-3 px-2 rounded-lg text-sm font-mono">Linux</div>
+              </div>
+            </div>
+            
+            {/* Mobile Development */}
+            <div className="scale-in reveal-delay-5 glass-card rounded-3xl p-8 hover:scale-105 transition-all duration-300">
+              <div className="w-16 h-16 bg-gradient-to-r from-[#f59e0b] to-[#ef4444] rounded-2xl flex items-center justify-center mx-auto mb-6">
+                <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"></path>
+                </svg>
+              </div>
+              <h3 className="text-2xl font-bold mb-6 text-center gradient-text">Mobile Development</h3>
+              <div className="tech-grid">
+                <div className="glass text-center py-3 px-2 rounded-lg text-sm font-mono">React Native</div>
+                <div className="glass text-center py-3 px-2 rounded-lg text-sm font-mono">Expo</div>
+                <div className="glass text-center py-3 px-2 rounded-lg text-sm font-mono">Firebase</div>
+                <div className="glass text-center py-3 px-2 rounded-lg text-sm font-mono">App Store</div>
               </div>
             </div>
           </div>

@@ -63,18 +63,18 @@ export default function Home() {
 
       {/* Navigation */}
       <nav className="fixed top-0 w-full z-50 nav-blur border-b border-white/10">
-        <div className="max-w-7xl mx-auto px-6 py-4">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 py-4">
           <div className="flex justify-between items-center">
-            <div className="text-2xl font-bold gradient-text">Gaurav.dev</div>
-            <div className="hidden md:flex space-x-8">
-              <a href="#home" className="nav-link text-white/80 hover:text-[#00d4ff] transition-colors duration-300">Home</a>
-              <a href="#about" className="nav-link text-white/80 hover:text-[#00d4ff] transition-colors duration-300">About</a>
-              <a href="#skills" className="nav-link text-white/80 hover:text-[#00d4ff] transition-colors duration-300">Skills</a>
-              <a href="#experience" className="nav-link text-white/80 hover:text-[#00d4ff] transition-colors duration-300">Experience</a>
-              <a href="#projects" className="nav-link text-white/80 hover:text-[#00d4ff] transition-colors duration-300">Projects</a>
-              <a href="#contact" className="nav-link text-white/80 hover:text-[#00d4ff] transition-colors duration-300">Contact</a>
+            <div className="text-xl sm:text-2xl font-bold gradient-text">Gaurav.dev</div>
+            <div className="hidden md:flex space-x-6 lg:space-x-8">
+              <a href="#home" className="nav-link text-white/80 hover:text-[#00d4ff] transition-colors duration-300 text-sm lg:text-base">Home</a>
+              <a href="#about" className="nav-link text-white/80 hover:text-[#00d4ff] transition-colors duration-300 text-sm lg:text-base">About</a>
+              <a href="#skills" className="nav-link text-white/80 hover:text-[#00d4ff] transition-colors duration-300 text-sm lg:text-base">Skills</a>
+              <a href="#experience" className="nav-link text-white/80 hover:text-[#00d4ff] transition-colors duration-300 text-sm lg:text-base">Experience</a>
+              <a href="#projects" className="nav-link text-white/80 hover:text-[#00d4ff] transition-colors duration-300 text-sm lg:text-base">Projects</a>
+              <a href="#contact" className="nav-link text-white/80 hover:text-[#00d4ff] transition-colors duration-300 text-sm lg:text-base">Contact</a>
             </div>
-            <button className="md:hidden text-white">
+            <button className="md:hidden text-white p-2">
               <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16"></path>
               </svg>
@@ -84,17 +84,17 @@ export default function Home() {
       </nav>
 
       {/* Hero Section */}
-      <section id="home" className="hero-section min-h-screen flex items-center justify-center relative overflow-hidden">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 text-center z-10">
-          <div className="reveal">
-            <div className="profile-image-container mb-6 sm:mb-8">
-              <div className="w-24 h-24 sm:w-28 sm:h-28 md:w-32 md:h-32 lg:w-36 lg:h-36 mx-auto mb-6 sm:mb-8 glass rounded-full flex items-center justify-center neon-glow overflow-hidden relative">
+      <section id="home" className="hero-section min-h-screen flex items-center justify-center relative overflow-hidden pt-20">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 text-center z-10 w-full">
+          <div className="reveal flex flex-col items-center">
+            <div className="profile-image-container mb-8 sm:mb-10">
+              <div className="w-32 h-32 sm:w-36 sm:h-36 md:w-40 md:h-40 lg:w-44 lg:h-44 mx-auto glass rounded-full flex items-center justify-center neon-glow overflow-hidden relative">
                 {/* Profile Image */}
                 <Image 
                   src="/profile-image.jpg" 
                   alt="Gaurav Singh Bais" 
-                  width={144}
-                  height={144}
+                  width={176}
+                  height={176}
                   className="w-full h-full object-cover rounded-full"
                   priority
                   onError={(e) => {
@@ -107,17 +107,17 @@ export default function Home() {
                   }}
                 />
                 {/* Fallback G letter - hidden by default */}
-                <span className="text-3xl sm:text-4xl md:text-5xl font-bold gradient-text absolute inset-0 flex items-center justify-center" style={{display: 'none'}}>G</span>
+                <span className="text-4xl sm:text-5xl md:text-6xl font-bold gradient-text absolute inset-0 flex items-center justify-center" style={{display: 'none'}}>G</span>
               </div>
             </div>
-            <div className="hero-text">
-              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-black mb-4 sm:mb-6 leading-tight">
+            <div className="hero-text max-w-4xl mx-auto">
+              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-black mb-6 sm:mb-8 leading-tight">
                 Hi, I&apos;m <span className="gradient-text">Gaurav</span>
               </h1>
-              <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-light text-white/80 mb-6 sm:mb-8">
+              <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-light text-white/80 mb-8 sm:mb-10">
                 Full-Stack <span className="gradient-text font-semibold">Engineer</span>
               </h2>
-              <p className="text-base sm:text-lg md:text-xl text-white/60 max-w-3xl mx-auto mb-8 sm:mb-10 md:mb-12 leading-relaxed px-4 sm:px-0">
+              <p className="text-base sm:text-lg md:text-xl text-white/60 max-w-3xl mx-auto mb-10 sm:mb-12 leading-relaxed px-4 sm:px-0">
                 Turning <span className="font-semibold gradient-text">complex ideas</span> into 
                 <span className="font-semibold text-[#00d4ff]"> seamless products</span>. 🚀 <br />
                 I specialize in building <span className="font-semibold text-[#8b5cf6]">scalable web apps</span> 
@@ -126,16 +126,16 @@ export default function Home() {
                 <span className="italic"> built to grow</span>. ⚡
               </p>
             </div>
-            <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center px-4 sm:px-0">
+            <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center px-4 sm:px-0 w-full max-w-md sm:max-w-none">
               <button 
                 onClick={() => scrollToSection('projects')} 
-                className="glass px-6 sm:px-8 py-3 sm:py-4 rounded-xl font-semibold text-base sm:text-lg neon-glow hover:scale-105 transition-all duration-300"
+                className="glass px-8 py-4 rounded-xl font-semibold text-lg neon-glow hover:scale-105 transition-all duration-300 flex-1 sm:flex-none"
               >
                 View My Work
               </button>
               <button 
                 onClick={() => scrollToSection('contact')} 
-                className="border border-[#00d4ff]/50 px-6 sm:px-8 py-3 sm:py-4 rounded-xl font-semibold text-base sm:text-lg hover:bg-[#00d4ff]/10 transition-all duration-300"
+                className="border border-[#00d4ff]/50 px-8 py-4 rounded-xl font-semibold text-lg hover:bg-[#00d4ff]/10 transition-all duration-300 flex-1 sm:flex-none"
               >
                 Let&apos;s Connect
               </button>
@@ -152,8 +152,8 @@ export default function Home() {
       </section>
 
       {/* About Section */}
-      <section id="about" className="py-32 relative">
-        <div className="max-w-6xl mx-auto px-6">
+      <section id="about" className="py-20 sm:py-32 relative">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6">
           <div className="reveal text-center mb-20">
             <h2 className="text-5xl md:text-6xl font-black mb-6 gradient-text">About Me</h2>
             <div className="w-24 h-1 bg-gradient-to-r from-[#00d4ff] to-[#8b5cf6] mx-auto"></div>
@@ -231,8 +231,8 @@ export default function Home() {
       </section>
 
       {/* Skills Section */}
-      <section id="skills" className="py-32 relative">
-        <div className="max-w-6xl mx-auto px-6">
+      <section id="skills" className="py-20 sm:py-32 relative">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6">
           <div className="reveal text-center mb-20">
             <h2 className="text-5xl md:text-6xl font-black mb-6 gradient-text">Skills & Tech</h2>
             <div className="w-24 h-1 bg-gradient-to-r from-[#00d4ff] to-[#8b5cf6] mx-auto"></div>
@@ -307,8 +307,8 @@ export default function Home() {
       </section>
 
       {/* Experience Section */}
-      <section id="experience" className="py-32 relative">
-        <div className="max-w-6xl mx-auto px-6">
+      <section id="experience" className="py-20 sm:py-32 relative">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6">
           <div className="reveal text-center mb-20">
             <h2 className="text-5xl md:text-6xl font-black mb-6 gradient-text">Work Experience</h2>
             <div className="w-24 h-1 bg-gradient-to-r from-[#00d4ff] to-[#8b5cf6] mx-auto"></div>
@@ -442,8 +442,8 @@ export default function Home() {
       </section>
 
       {/* Projects Section */}
-      <section id="projects" className="py-32 relative">
-        <div className="max-w-7xl mx-auto px-6">
+      <section id="projects" className="py-20 sm:py-32 relative">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="reveal text-center mb-20">
             <h2 className="text-5xl md:text-6xl font-black mb-6 gradient-text">Featured Projects</h2>
             <div className="w-24 h-1 bg-gradient-to-r from-[#00d4ff] to-[#8b5cf6] mx-auto"></div>
@@ -556,8 +556,8 @@ export default function Home() {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="py-32 relative">
-        <div className="max-w-4xl mx-auto px-6">
+      <section id="contact" className="py-20 sm:py-32 relative">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6">
           <div className="reveal text-center mb-20">
             <h2 className="text-5xl md:text-6xl font-black mb-6 gradient-text">Let&apos;s Connect</h2>
             <p className="text-xl text-white/60 mb-8">Ready to bring your ideas to life? Let&apos;s discuss your next project!</p>
@@ -662,8 +662,8 @@ export default function Home() {
       </section>
 
       {/* Footer */}
-      <footer className="py-16 border-t border-white/10">
-        <div className="max-w-6xl mx-auto px-6">
+      <footer className="py-12 sm:py-16 border-t border-white/10">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6">
           <div className="text-center">
             <div className="text-3xl font-bold gradient-text mb-4">Gaurav.dev</div>
             <p className="text-white/60 mb-8">Crafting digital experiences with passion and precision</p>

@@ -166,7 +166,7 @@ export default function Home() {
                   I&apos;m a full-stack engineer with 3+ years of hands-on experience building scalable web applications and SaaS platforms using the MERN stack. What started as curiosity about how products work quickly grew into a career focused on crafting systems that are reliable, efficient, and impactful.
                 </p>
                 <p className="text-white/80 text-lg leading-relaxed mb-6">
-                  At RapidData, I contributed to a low-code platform where I built reusable React components, analytics dashboards, and optimized performance for enterprise users. Later, at NoxAlgo, I worked as a full-stack engineer, building a SaaS social media management tool with React, Node.js, DevOps pipelines, and even React Native for mobile scheduling.
+                  At RapidData, I contributed to a low-code platform where I built reusable React.js components, analytics dashboards, and optimized performance for enterprise users. Later, at NoxAlgo, I worked as a full-stack engineer, building a SaaS social media management tool with React.js, Node.js, DevOps pipelines, and even React Native for mobile scheduling.
                 </p>
                 <p className="text-white/80 text-lg leading-relaxed mb-8">
                   Through these roles, I&apos;ve learned that great software isn&apos;t just about code — it&apos;s about solving problems, streamlining workflows, and delivering experiences that help businesses grow.
@@ -192,7 +192,7 @@ export default function Home() {
                   </div>
                   <h4 className="text-xl font-bold">Performance-Driven</h4>
                 </div>
-                <p className="text-white/70">I specialize in building fast, scalable applications. From optimizing React apps to designing APIs that handle thousands of requests, I focus on speed, reliability, and growth.</p>
+                <p className="text-white/70">I specialize in building fast, scalable applications. From optimizing React.js apps to designing APIs that handle thousands of requests, I focus on speed, reliability, and growth.</p>
               </div>
               
               <div className="glass-card rounded-2xl p-6 hover:scale-105 transition-transform duration-300">
@@ -247,7 +247,7 @@ export default function Home() {
               </div>
               <h3 className="text-2xl font-bold mb-6 text-center gradient-text">Frontend</h3>
               <div className="tech-grid">
-                <div className="glass text-center py-3 px-2 rounded-lg text-sm font-mono">React</div>
+                <div className="glass text-center py-3 px-2 rounded-lg text-sm font-mono">React.js</div>
                 <div className="glass text-center py-3 px-2 rounded-lg text-sm font-mono">Next.js</div>
                 <div className="glass text-center py-3 px-2 rounded-lg text-sm font-mono">TypeScript</div>
                 <div className="glass text-center py-3 px-2 rounded-lg text-sm font-mono">Tailwind CSS</div>
@@ -279,7 +279,7 @@ export default function Home() {
               </div>
               <h3 className="text-2xl font-bold mb-6 text-center gradient-text">Database</h3>
               <div className="tech-grid">
-                <div className="glass text-center py-3 px-2 rounded-lg text-sm font-mono">MongoDB</div>
+                <div className="glass text-center py-3 px-2 rounded-lg text-sm font-mono">Mongo DB</div>
                 <div className="glass text-center py-3 px-2 rounded-lg text-sm font-mono">PostgreSQL</div>
                 <div className="glass text-center py-3 px-2 rounded-lg text-sm font-mono">Redis</div>
               </div>
@@ -349,7 +349,7 @@ export default function Home() {
                   </li>
                   <li className="flex items-start">
                     <div className="w-2 h-2 bg-[#8b5cf6] rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                    Designed and implemented backend using Node.js, Express, MongoDB with scalable APIs
+                    Designed and implemented backend using Node.js, Express, Mongo DB with scalable APIs
                   </li>
                   <li className="flex items-start">
                     <div className="w-2 h-2 bg-[#f472b6] rounded-full mt-2 mr-3 flex-shrink-0"></div>
@@ -380,9 +380,9 @@ export default function Home() {
               
               <div className="flex flex-wrap gap-2">
                 <span className="glass px-3 py-1 rounded-full text-xs font-mono text-[#00d4ff]">MERN Stack</span>
-                <span className="glass px-3 py-1 rounded-full text-xs font-mono text-[#8b5cf6]">MongoDB</span>
+                <span className="glass px-3 py-1 rounded-full text-xs font-mono text-[#8b5cf6]">Mongo DB</span>
                 <span className="glass px-3 py-1 rounded-full text-xs font-mono text-[#f472b6]">Express</span>
-                <span className="glass px-3 py-1 rounded-full text-xs font-mono text-[#10b981]">React</span>
+                <span className="glass px-3 py-1 rounded-full text-xs font-mono text-[#10b981]">React.js</span>
                 <span className="glass px-3 py-1 rounded-full text-xs font-mono text-[#00d4ff]">Node.js</span>
                 <span className="glass px-3 py-1 rounded-full text-xs font-mono text-[#8b5cf6]">AWS</span>
                 <span className="glass px-3 py-1 rounded-full text-xs font-mono text-[#f472b6]">Docker</span>
@@ -415,7 +415,7 @@ export default function Home() {
                   </li>
                   <li className="flex items-start">
                     <div className="w-2 h-2 bg-[#10b981] rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                    Designed and maintained backend APIs with Node.js + Express connected to MongoDB
+                    Designed and maintained backend APIs with Node.js + Express connected to Mongo DB
                   </li>
                   <li className="flex items-start">
                     <div className="w-2 h-2 bg-[#00d4ff] rounded-full mt-2 mr-3 flex-shrink-0"></div>
@@ -435,7 +435,7 @@ export default function Home() {
                   </li>
                   <li className="flex items-start">
                     <div className="w-2 h-2 bg-[#10b981] rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                    Implemented analytics dashboards using Recharts & Chart.js with MongoDB pipelines, reducing reporting cycles from hours to minutes
+                    Implemented analytics dashboards using Recharts & Chart.js with Mongo DB pipelines, reducing reporting cycles from hours to minutes
                   </li>
                 </ul>
               </div>
@@ -444,7 +444,7 @@ export default function Home() {
                 <span className="glass px-3 py-1 rounded-full text-xs font-mono text-[#8b5cf6]">React.js</span>
                 <span className="glass px-3 py-1 rounded-full text-xs font-mono text-[#00d4ff]">Node.js</span>
                 <span className="glass px-3 py-1 rounded-full text-xs font-mono text-[#f472b6]">Express</span>
-                <span className="glass px-3 py-1 rounded-full text-xs font-mono text-[#10b981]">MongoDB</span>
+                <span className="glass px-3 py-1 rounded-full text-xs font-mono text-[#10b981]">Mongo DB</span>
                 <span className="glass px-3 py-1 rounded-full text-xs font-mono text-[#8b5cf6]">REST APIs</span>
                 <span className="glass px-3 py-1 rounded-full text-xs font-mono text-[#00d4ff]">Redux</span>
                 <span className="glass px-3 py-1 rounded-full text-xs font-mono text-[#f472b6]">WebSockets</span>
@@ -482,9 +482,9 @@ export default function Home() {
                   Complete social media management SaaS with scheduling, analytics, and team collaboration features.
                 </p>
                 <div className="flex flex-wrap gap-2 mb-6">
-                  <span className="glass px-3 py-1 rounded-full text-xs font-mono text-[#00d4ff]">React</span>
+                  <span className="glass px-3 py-1 rounded-full text-xs font-mono text-[#00d4ff]">React.js</span>
                   <span className="glass px-3 py-1 rounded-full text-xs font-mono text-[#8b5cf6]">Node.js</span>
-                  <span className="glass px-3 py-1 rounded-full text-xs font-mono text-[#f472b6]">MongoDB</span>
+                  <span className="glass px-3 py-1 rounded-full text-xs font-mono text-[#f472b6]">Mongo DB</span>
                   <span className="glass px-3 py-1 rounded-full text-xs font-mono text-[#10b981]">AWS</span>
                 </div>
                 <div className="flex gap-4">
@@ -516,9 +516,9 @@ export default function Home() {
                   No-code platform enabling businesses to create applications without coding knowledge.
                 </p>
                 <div className="flex flex-wrap gap-2 mb-6">
-                  <span className="glass px-3 py-1 rounded-full text-xs font-mono text-[#00d4ff]">React</span>
+                  <span className="glass px-3 py-1 rounded-full text-xs font-mono text-[#00d4ff]">React.js</span>
                   <span className="glass px-3 py-1 rounded-full text-xs font-mono text-[#8b5cf6]">Express</span>
-                  <span className="glass px-3 py-1 rounded-full text-xs font-mono text-[#f472b6]">MongoDB</span>
+                  <span className="glass px-3 py-1 rounded-full text-xs font-mono text-[#f472b6]">Mongo DB</span>
                   <span className="glass px-3 py-1 rounded-full text-xs font-mono text-[#10b981]">WebSocket</span>
                 </div>
                 <div className="flex gap-4">

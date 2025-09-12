@@ -65,7 +65,7 @@ export default function Home() {
       <nav className="fixed top-0 w-full z-50 nav-blur border-b border-white/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 py-4">
           <div className="flex justify-between items-center">
-            <div className="text-xl sm:text-2xl font-bold gradient-text">Gaurav.dev</div>
+            <div className="text-xl sm:text-2xl font-bold gradient-text">Gaurav</div>
             <div className="hidden md:flex space-x-6 lg:space-x-8">
               <a href="#home" className="nav-link text-white/80 hover:text-[#00d4ff] transition-colors duration-300 text-sm lg:text-base">Home</a>
               <a href="#about" className="nav-link text-white/80 hover:text-[#00d4ff] transition-colors duration-300 text-sm lg:text-base">About</a>
@@ -407,7 +407,7 @@ export default function Home() {
                 <ul className="space-y-3 text-white/80">
                   <li className="flex items-start">
                     <div className="w-2 h-2 bg-[#8b5cf6] rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                    Worked on BuildSafal, a low-code/no-code platform for businesses to create applications without coding
+                    Worked on Build Safal, a low-code/no-code platform for businesses to create applications without coding
                   </li>
                   <li className="flex items-start">
                     <div className="w-2 h-2 bg-[#f472b6] rounded-full mt-2 mr-3 flex-shrink-0"></div>
@@ -477,7 +477,7 @@ export default function Home() {
                 </div>
               </div>
               <div className="p-8">
-                <h3 className="text-2xl font-bold mb-4 gradient-text">NoxAlgo Platform</h3>
+                <h3 className="text-2xl font-bold mb-4 gradient-text">Post Pilot</h3>
                 <p className="text-white/70 mb-6 leading-relaxed">
                   Complete social media management SaaS with scheduling, analytics, and team collaboration features.
                 </p>
@@ -511,7 +511,7 @@ export default function Home() {
                 </div>
               </div>
               <div className="p-8">
-                <h3 className="text-2xl font-bold mb-4 gradient-text">BuildSafal Platform</h3>
+                <h3 className="text-2xl font-bold mb-4 gradient-text">Safal Platform</h3>
                 <p className="text-white/70 mb-6 leading-relaxed">
                   No-code platform enabling businesses to create applications without coding knowledge.
                 </p>
@@ -679,7 +679,7 @@ export default function Home() {
       <footer className="py-12 sm:py-16 border-t border-white/10">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
           <div className="text-center">
-            <div className="text-3xl font-bold gradient-text mb-4">Gaurav.dev</div>
+            <div className="text-3xl font-bold gradient-text mb-4">Gaurav</div>
             <p className="text-white/60 mb-8">Crafting digital experiences with passion and precision</p>
             
             <div className="flex justify-center space-x-6 mb-8">
